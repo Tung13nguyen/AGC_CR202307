@@ -1,13 +1,11 @@
-﻿using System;
+﻿using SAPbouiCOM.Framework;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using SAPbouiCOM.Framework;
 
 namespace CR202307
 {
     [FormAttribute("CR202307.OpenPRForm", "OpenPRForm.b1f")]
-    class OpenPRForm : UserFormBase
+    internal class OpenPRForm : UserFormBase
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private SAPbouiCOM.Form oForm;
@@ -122,7 +120,6 @@ namespace CR202307
 
         private void mtxPR_LostFocusAfter(object sboObject, SAPbouiCOM.SBOItemEventArg pVal)
         {
-
         }
 
         private void mtxPR_LinkPressedBefore(object sboObject, SAPbouiCOM.SBOItemEventArg pVal, out bool BubbleEvent)
@@ -143,7 +140,6 @@ namespace CR202307
                         mtxPR.Columns.Item("Col_0_14").Cells.Item(pVal.Row).Click(SAPbouiCOM.BoCellClickType.ct_Linked);
                         SAPbouiCOM.Form departmentFrom = Application.SBO_Application.OpenForm((SAPbouiCOM.BoFormObjectEnum)119, "", "");
                         BubbleEvent = false;
-
                     }
                 }
             }
@@ -277,7 +273,6 @@ namespace CR202307
             this.ActivateAfter += Form_ActivateAfter;
             this.CloseAfter += new CloseAfterHandler(this.Form_CloseAfter);
         }
-
 
         private void OnCustomInitialize()
         {
@@ -533,7 +528,7 @@ namespace CR202307
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                key = Convert.ToInt32(dt.GetValue("DocEntry", i));
+                key = Convert.ToInt32(dt.GetValue("IntrnalKey", i));
                 break;
             }
 
@@ -585,6 +580,21 @@ namespace CR202307
                         mtxPR.SelectionMode = SAPbouiCOM.BoMatrixSelect.ms_Auto;
                         mtxPR.SelectRow(pVal.Row, true, true);
                     }
+                }
+            }
+        }
+
+        private void SelectRow()
+        {
+            if (this.oForm != null && this.oForm.UniqueID == this.UIAPIRawForm.UniqueID && mtxPR != null)
+            {
+                for (int i = 0; i < mtxPR.RowCount; i++)
+                {
+                    var selectedValue = ((SAPbouiCOM.EditText)mtxPR.Columns.Item("Col_0_11").Cells.Item(i).Specific).Value;
+                    var persitValue = ((SAPbouiCOM.EditText)mtxPR.Columns.Item("Col_0_13").Cells.Item(i).Specific).Value;
+
+                    if (!String.IsNullOrEmpty(selectedValue) && !selectedValue.Equals(persitValue))
+                        mtxPR.SelectRow(1, true, true);
                 }
             }
         }

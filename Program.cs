@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using SAPbouiCOM.Framework;
+﻿using SAPbouiCOM.Framework;
+using System;
 
 namespace CR202307
 {
-    class Program
+    internal class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             try
             {
@@ -35,7 +34,7 @@ namespace CR202307
             }
         }
 
-        static void SBO_Application_AppEvent(SAPbouiCOM.BoAppEventTypes EventType)
+        private static void SBO_Application_AppEvent(SAPbouiCOM.BoAppEventTypes EventType)
         {
             switch (EventType)
             {
@@ -43,14 +42,19 @@ namespace CR202307
                     //Exit Add-On
                     System.Windows.Forms.Application.Exit();
                     break;
+
                 case SAPbouiCOM.BoAppEventTypes.aet_CompanyChanged:
                     break;
+
                 case SAPbouiCOM.BoAppEventTypes.aet_FontChanged:
                     break;
+
                 case SAPbouiCOM.BoAppEventTypes.aet_LanguageChanged:
                     break;
+
                 case SAPbouiCOM.BoAppEventTypes.aet_ServerTerminition:
                     break;
+
                 default:
                     break;
             }

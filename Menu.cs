@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SAPbouiCOM.Framework;
+﻿using SAPbouiCOM.Framework;
+using System;
 
 namespace CR202307
 {
-    class Menu
+    internal class Menu
     {
         public void AddMenuItems()
         {
             SAPbouiCOM.Menus oMenus = null;
             SAPbouiCOM.MenuItem oMenuItem = null;
             SAPbouiCOM.MenuCreationParams oCreationPackage = null;
-            oCreationPackage = ((SAPbouiCOM.MenuCreationParams)(Application.SBO_Application.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_MenuCreationParams)));          
+            oCreationPackage = ((SAPbouiCOM.MenuCreationParams)(Application.SBO_Application.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_MenuCreationParams)));
 
             try
             {
@@ -50,6 +48,5 @@ namespace CR202307
                 Application.SBO_Application.MessageBox(ex.ToString(), 1, "Ok", "", "");
             }
         }
-
     }
 }
