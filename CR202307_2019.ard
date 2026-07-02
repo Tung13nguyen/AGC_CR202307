@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="NECVN" SchemaVersion="3.0" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="ACVN_CR202307" ExtVersion="1.1.5" Contdata="" Partner="NECVN" DBType="Both" ClientType="A">
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="NTT" SchemaVersion="3.0" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="ACVN_CR202307_v1.2.2" ExtVersion="1.2.2" Contdata="" Partner="NTT" DBType="Both" ClientType="A">
   <Validity>
     <SBOCompatibility>
       <Version From="" To="" />
@@ -18,7 +18,7 @@
   </Configuration>
   <Addons>
     <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
-      <x86 AddonExe="D:\Repository\SAP_ACVN\branches\Version 10\CR202307\bin\Debug\CR202307.exe" AddonSig="">
+      <x86 AddonExe="C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\bin\Debug\CR202307.exe" AddonSig="">
         <Installation>
           <Files>
             <File FileName="CR202307.b1s">
@@ -36,7 +36,37 @@
             <File FileName="log4net.dll">
               <Actions />
             </File>
-            <File FileName="log4net.xml">
+            <File FileName="Microsoft.CSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Configuration.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.DataSetExtensions.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.dll">
+              <Actions />
+            </File>
+            <File FileName="System.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Drawing.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.Linq.dll">
               <Actions />
             </File>
           </Files>
@@ -58,13 +88,43 @@
             <File FileName="log4net.dll">
               <Actions />
             </File>
-            <File FileName="log4net.xml">
+            <File FileName="Microsoft.CSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Configuration.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.DataSetExtensions.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.dll">
+              <Actions />
+            </File>
+            <File FileName="System.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Drawing.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.Linq.dll">
               <Actions />
             </File>
           </Files>
         </Uninstallation>
       </x86>
-      <x64 AddonExe="D:\Repository\SAP_ACVN\branches\Version 10\CR202307\bin\Debug\CR202307.exe" AddonSig="">
+      <x64 AddonExe="C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\bin\Debug\CR202307.exe" AddonSig="">
         <Installation>
           <Files>
             <File FileName="CR202307.b1s">
@@ -82,7 +142,37 @@
             <File FileName="log4net.dll">
               <Actions />
             </File>
-            <File FileName="log4net.xml">
+            <File FileName="Microsoft.CSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Configuration.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.DataSetExtensions.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.dll">
+              <Actions />
+            </File>
+            <File FileName="System.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Drawing.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.Linq.dll">
               <Actions />
             </File>
           </Files>
@@ -104,7 +194,37 @@
             <File FileName="log4net.dll">
               <Actions />
             </File>
-            <File FileName="log4net.xml">
+            <File FileName="Microsoft.CSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Configuration.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.DataSetExtensions.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Data.dll">
+              <Actions />
+            </File>
+            <File FileName="System.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Drawing.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.dll">
+              <Actions />
+            </File>
+            <File FileName="System.Xml.Linq.dll">
               <Actions />
             </File>
           </Files>

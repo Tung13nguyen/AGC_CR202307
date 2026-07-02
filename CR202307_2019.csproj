@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CR202307</RootNamespace>
     <AssemblyName>CR202307</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,24 +36,52 @@
     <StartupObject>CR202307.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\ACVN_Addon\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VNS_Order_Sheet\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessOneSDK, Version=1.1.0.1, Culture=neutral, PublicKeyToken=c7c3cb60e45d119f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\SAP\SAP Business One SDK\Lib\SAPBusinessOneSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
       <Private>True</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="SAPBusinessOneSDK" />
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UDOForm1.b1f.cs">
+      <DependentUpon>UDOForm1.b1f</DependentUpon>
+    </Compile>
     <None Include="app.config" />
     <None Include="OpenPRForm.b1f">
       <FormCategory>UserForm</FormCategory>
@@ -64,6 +93,9 @@
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
+    <None Include="UDOForm1.b1f">
+      <FormCategory>UDOForm</FormCategory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

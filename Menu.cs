@@ -1,4 +1,5 @@
 ﻿using SAPbouiCOM.Framework;
+
 using System;
 
 namespace CR202307
@@ -7,6 +8,7 @@ namespace CR202307
     {
         public void AddMenuItems()
         {
+            SAPbobsCOM.Company oCompany = new SAPbobsCOM.Company();
             SAPbouiCOM.Menus oMenus = null;
             SAPbouiCOM.MenuItem oMenuItem = null;
             SAPbouiCOM.MenuCreationParams oCreationPackage = null;

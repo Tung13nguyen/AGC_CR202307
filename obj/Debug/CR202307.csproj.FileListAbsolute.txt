@@ -1,0 +1,4 @@
+C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\obj\Debug\CR202307.csproj.AssemblyReference.cache
+C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\obj\Debug\CR202307.csproj.CoreCompileInputs.cache
+C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\obj\Debug\CR202307.exe
+C:\Users\phuong.nguyen\OneDrive - NTT Ltd\Me\GitHub\AGC_CR202307\obj\Debug\CR202307.pdb
